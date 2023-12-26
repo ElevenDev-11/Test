@@ -51,7 +51,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = 'com.example.mylibrary' //groupId 随便取，jitpack不会使用
+                groupId = 'cn.elevendev.test' //groupId 随便取，jitpack不会使用
                 artifactId = 'test'  //test随便取,jitpack不会使用
                 version = '1.0.1' //随便取，jitpack不会使用
             }
