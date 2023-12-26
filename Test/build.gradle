@@ -3,7 +3,16 @@ plugins {
     id 'maven-publish'
 }
 
-
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'tests'
+            artifactId = 'test'
+            version = '1.0.1'
+        }
+    }
+}
+/*
 afterEvaluate {
     publishing {
         publications {
@@ -18,7 +27,7 @@ afterEvaluate {
         }
     }
 }
-
+*/
 android {
     signingConfigs {
         release {
